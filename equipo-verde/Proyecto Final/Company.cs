@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Proyecto_Final
 {
-    public partial class Form1 : Form
+    public partial class frmCompany : MetroFramework.Forms.MetroForm
     {
-        public Form1()
+        public frmCompany()
         {
             InitializeComponent();
         }
