@@ -1,0 +1,2 @@
+﻿Abriendo los repositorios:
+C:\Visual Studio\Ordinario\.git

@@ -16,5 +16,25 @@ namespace Proyecto_Final
         {
             InitializeComponent();
         }
+
+        private void metroLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtLastName_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtFirstName_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblemail_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
