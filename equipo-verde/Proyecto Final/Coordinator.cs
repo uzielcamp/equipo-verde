@@ -16,5 +16,10 @@ namespace Proyecto_Final
         {
             InitializeComponent();
         }
+
+        private void metroGrid2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
