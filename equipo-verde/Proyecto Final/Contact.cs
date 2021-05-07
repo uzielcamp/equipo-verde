@@ -41,5 +41,10 @@ namespace Proyecto_Final
         {
 
         }
+
+        private void pctphoto_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

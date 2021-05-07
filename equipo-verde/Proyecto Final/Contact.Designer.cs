@@ -51,7 +51,7 @@ namespace Proyecto_Final
             this.txtemail = new MetroFramework.Controls.MetroTextBox();
             this.lblemail = new MetroFramework.Controls.MetroLabel();
             this.txtDeparment = new MetroFramework.Controls.MetroTextBox();
-            this.lblDeparment = new MetroFramework.Controls.MetroLabel();
+            this.lblDepartment = new MetroFramework.Controls.MetroLabel();
             this.bttSearch = new MetroFramework.Controls.MetroButton();
             this.bttAdd = new MetroFramework.Controls.MetroButton();
             this.bttEdit = new MetroFramework.Controls.MetroButton();
@@ -167,6 +167,7 @@ namespace Proyecto_Final
             this.pctphoto.Size = new System.Drawing.Size(53, 71);
             this.pctphoto.TabIndex = 3;
             this.pctphoto.TabStop = false;
+            this.pctphoto.Click += new System.EventHandler(this.pctphoto_Click);
             // 
             // txtId
             // 
@@ -426,14 +427,14 @@ namespace Proyecto_Final
             this.txtDeparment.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txtDeparment.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
-            // lblDeparment
+            // lblDepartment
             // 
-            this.lblDeparment.AutoSize = true;
-            this.lblDeparment.Location = new System.Drawing.Point(478, 262);
-            this.lblDeparment.Name = "lblDeparment";
-            this.lblDeparment.Size = new System.Drawing.Size(75, 19);
-            this.lblDeparment.TabIndex = 15;
-            this.lblDeparment.Text = "Deparment";
+            this.lblDepartment.AutoSize = true;
+            this.lblDepartment.Location = new System.Drawing.Point(478, 262);
+            this.lblDepartment.Name = "lblDepartment";
+            this.lblDepartment.Size = new System.Drawing.Size(80, 19);
+            this.lblDepartment.TabIndex = 15;
+            this.lblDepartment.Text = "Department";
             // 
             // bttSearch
             // 
@@ -501,7 +502,7 @@ namespace Proyecto_Final
             this.Controls.Add(this.bttAdd);
             this.Controls.Add(this.bttSearch);
             this.Controls.Add(this.txtDeparment);
-            this.Controls.Add(this.lblDeparment);
+            this.Controls.Add(this.lblDepartment);
             this.Controls.Add(this.txtemail);
             this.Controls.Add(this.lblemail);
             this.Controls.Add(this.txtCellphone);
@@ -545,7 +546,7 @@ namespace Proyecto_Final
         private MetroFramework.Controls.MetroTextBox txtemail;
         private MetroFramework.Controls.MetroLabel lblemail;
         private MetroFramework.Controls.MetroTextBox txtDeparment;
-        private MetroFramework.Controls.MetroLabel lblDeparment;
+        private MetroFramework.Controls.MetroLabel lblDepartment;
         private MetroFramework.Controls.MetroButton bttSearch;
         private MetroFramework.Controls.MetroButton bttAdd;
         private MetroFramework.Controls.MetroButton bttEdit;
