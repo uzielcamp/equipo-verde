@@ -95,6 +95,7 @@
     <Compile Include="Coordinator.Designer.cs">
       <DependentUpon>Coordinator.cs</DependentUpon>
     </Compile>
+    <Compile Include="DataContext.cs" />
     <Compile Include="Entidades\Adviser.cs" />
     <Compile Include="Entidades\Coach.cs" />
     <Compile Include="Entidades\Company.cs" />
