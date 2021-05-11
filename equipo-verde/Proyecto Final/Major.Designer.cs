@@ -48,14 +48,14 @@ namespace Proyecto_Final
             this.lblemail = new MetroFramework.Controls.MetroLabel();
             this.lblphoneNumberm = new MetroFramework.Controls.MetroLabel();
             this.lblPhoneNumber = new MetroFramework.Controls.MetroLabel();
-            this.lblLastName = new MetroFramework.Controls.MetroLabel();
+            this.lblDescription = new MetroFramework.Controls.MetroLabel();
             this.lblName = new MetroFramework.Controls.MetroLabel();
             this.lblId = new MetroFramework.Controls.MetroLabel();
             this.bttSearch = new MetroFramework.Controls.MetroButton();
-            this.pctphoto = new System.Windows.Forms.PictureBox();
+            this.pctPhoto = new System.Windows.Forms.PictureBox();
             this.grdadviser = new MetroFramework.Controls.MetroGrid();
             this.metroGrid1 = new MetroFramework.Controls.MetroGrid();
-            ((System.ComponentModel.ISupportInitialize)(this.pctphoto)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctPhoto)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grdadviser)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.metroGrid1)).BeginInit();
             this.SuspendLayout();
@@ -120,7 +120,7 @@ namespace Proyecto_Final
             this.txtemail.CustomButton.UseSelectable = true;
             this.txtemail.CustomButton.Visible = false;
             this.txtemail.Lines = new string[0];
-            this.txtemail.Location = new System.Drawing.Point(599, 209);
+            this.txtemail.Location = new System.Drawing.Point(598, 184);
             this.txtemail.MaxLength = 32767;
             this.txtemail.Name = "txtemail";
             this.txtemail.PasswordChar = '\0';
@@ -150,7 +150,7 @@ namespace Proyecto_Final
             this.txtphoneNumber.CustomButton.UseSelectable = true;
             this.txtphoneNumber.CustomButton.Visible = false;
             this.txtphoneNumber.Lines = new string[0];
-            this.txtphoneNumber.Location = new System.Drawing.Point(599, 180);
+            this.txtphoneNumber.Location = new System.Drawing.Point(598, 151);
             this.txtphoneNumber.MaxLength = 32767;
             this.txtphoneNumber.Name = "txtphoneNumber";
             this.txtphoneNumber.PasswordChar = '\0';
@@ -180,7 +180,7 @@ namespace Proyecto_Final
             this.txtLastName.CustomButton.UseSelectable = true;
             this.txtLastName.CustomButton.Visible = false;
             this.txtLastName.Lines = new string[0];
-            this.txtLastName.Location = new System.Drawing.Point(599, 151);
+            this.txtLastName.Location = new System.Drawing.Point(598, 220);
             this.txtLastName.MaxLength = 32767;
             this.txtLastName.Name = "txtLastName";
             this.txtLastName.PasswordChar = '\0';
@@ -258,7 +258,7 @@ namespace Proyecto_Final
             // lblemail
             // 
             this.lblemail.AutoSize = true;
-            this.lblemail.Location = new System.Drawing.Point(481, 209);
+            this.lblemail.Location = new System.Drawing.Point(481, 184);
             this.lblemail.Name = "lblemail";
             this.lblemail.Size = new System.Drawing.Size(47, 19);
             this.lblemail.TabIndex = 70;
@@ -267,7 +267,7 @@ namespace Proyecto_Final
             // lblphoneNumberm
             // 
             this.lblphoneNumberm.AutoSize = true;
-            this.lblphoneNumberm.Location = new System.Drawing.Point(481, 180);
+            this.lblphoneNumberm.Location = new System.Drawing.Point(472, 151);
             this.lblphoneNumberm.Name = "lblphoneNumberm";
             this.lblphoneNumberm.Size = new System.Drawing.Size(99, 19);
             this.lblphoneNumberm.TabIndex = 69;
@@ -281,14 +281,14 @@ namespace Proyecto_Final
             this.lblPhoneNumber.Size = new System.Drawing.Size(0, 0);
             this.lblPhoneNumber.TabIndex = 68;
             // 
-            // lblLastName
+            // lblDescription
             // 
-            this.lblLastName.AutoSize = true;
-            this.lblLastName.Location = new System.Drawing.Point(481, 151);
-            this.lblLastName.Name = "lblLastName";
-            this.lblLastName.Size = new System.Drawing.Size(71, 19);
-            this.lblLastName.TabIndex = 67;
-            this.lblLastName.Text = "Last Name";
+            this.lblDescription.AutoSize = true;
+            this.lblDescription.Location = new System.Drawing.Point(472, 220);
+            this.lblDescription.Name = "lblDescription";
+            this.lblDescription.Size = new System.Drawing.Size(74, 19);
+            this.lblDescription.TabIndex = 67;
+            this.lblDescription.Text = "Description";
             // 
             // lblName
             // 
@@ -317,13 +317,13 @@ namespace Proyecto_Final
             this.bttSearch.Text = "Search";
             this.bttSearch.UseSelectable = true;
             // 
-            // pctphoto
+            // pctPhoto
             // 
-            this.pctphoto.Location = new System.Drawing.Point(337, 93);
-            this.pctphoto.Name = "pctphoto";
-            this.pctphoto.Size = new System.Drawing.Size(97, 118);
-            this.pctphoto.TabIndex = 63;
-            this.pctphoto.TabStop = false;
+            this.pctPhoto.Location = new System.Drawing.Point(337, 93);
+            this.pctPhoto.Name = "pctPhoto";
+            this.pctPhoto.Size = new System.Drawing.Size(97, 118);
+            this.pctPhoto.TabIndex = 63;
+            this.pctPhoto.TabStop = false;
             // 
             // grdadviser
             // 
@@ -352,7 +352,7 @@ namespace Proyecto_Final
             this.grdadviser.EnableHeadersVisualStyles = false;
             this.grdadviser.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.grdadviser.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.grdadviser.Location = new System.Drawing.Point(337, 93);
+            this.grdadviser.Location = new System.Drawing.Point(337, 79);
             this.grdadviser.Name = "grdadviser";
             this.grdadviser.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -365,7 +365,7 @@ namespace Proyecto_Final
             this.grdadviser.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.grdadviser.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.grdadviser.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.grdadviser.Size = new System.Drawing.Size(394, 235);
+            this.grdadviser.Size = new System.Drawing.Size(440, 249);
             this.grdadviser.TabIndex = 62;
             // 
             // metroGrid1
@@ -429,16 +429,16 @@ namespace Proyecto_Final
             this.Controls.Add(this.lblemail);
             this.Controls.Add(this.lblphoneNumberm);
             this.Controls.Add(this.lblPhoneNumber);
-            this.Controls.Add(this.lblLastName);
+            this.Controls.Add(this.lblDescription);
             this.Controls.Add(this.lblName);
             this.Controls.Add(this.lblId);
             this.Controls.Add(this.bttSearch);
-            this.Controls.Add(this.pctphoto);
+            this.Controls.Add(this.pctPhoto);
             this.Controls.Add(this.grdadviser);
             this.Controls.Add(this.metroGrid1);
             this.Name = "frmMajor";
             this.Text = "Major";
-            ((System.ComponentModel.ISupportInitialize)(this.pctphoto)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctPhoto)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grdadviser)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.metroGrid1)).EndInit();
             this.ResumeLayout(false);
@@ -461,11 +461,11 @@ namespace Proyecto_Final
         private MetroFramework.Controls.MetroLabel lblemail;
         private MetroFramework.Controls.MetroLabel lblphoneNumberm;
         private MetroFramework.Controls.MetroLabel lblPhoneNumber;
-        private MetroFramework.Controls.MetroLabel lblLastName;
+        private MetroFramework.Controls.MetroLabel lblDescription;
         private MetroFramework.Controls.MetroLabel lblName;
         private MetroFramework.Controls.MetroLabel lblId;
         private MetroFramework.Controls.MetroButton bttSearch;
-        private System.Windows.Forms.PictureBox pctphoto;
+        private System.Windows.Forms.PictureBox pctPhoto;
         private MetroFramework.Controls.MetroGrid grdadviser;
         private MetroFramework.Controls.MetroGrid metroGrid1;
     }

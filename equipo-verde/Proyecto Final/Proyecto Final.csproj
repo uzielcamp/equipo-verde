@@ -103,6 +103,7 @@
     <Compile Include="Entidades\Company.cs" />
     <Compile Include="Entidades\Contact.cs" />
     <Compile Include="Entidades\Coordinator.cs" />
+    <Compile Include="Entidades\keyAttribute.cs" />
     <Compile Include="Entidades\Major.cs" />
     <Compile Include="Entidades\Student.cs" />
     <Compile Include="Major.cs">

@@ -16,5 +16,15 @@ namespace Proyecto_Final
         {
             InitializeComponent();
         }
+
+        private void grddatos_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void bttAdd_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
