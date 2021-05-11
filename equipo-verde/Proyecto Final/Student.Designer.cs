@@ -43,7 +43,7 @@ namespace Proyecto_Final
             this.bttSearch = new MetroFramework.Controls.MetroButton();
             this.txtBirhDay = new MetroFramework.Controls.MetroTextBox();
             this.lblBirhdate = new MetroFramework.Controls.MetroLabel();
-            this.txtCellphone = new MetroFramework.Controls.MetroTextBox();
+            this.txtPhoneNumber = new MetroFramework.Controls.MetroTextBox();
             this.lblPhoneNumber = new MetroFramework.Controls.MetroLabel();
             this.txtLastName = new MetroFramework.Controls.MetroTextBox();
             this.lblLastName = new MetroFramework.Controls.MetroLabel();
@@ -157,35 +157,35 @@ namespace Proyecto_Final
             this.lblBirhdate.TabIndex = 33;
             this.lblBirhdate.Text = "Birhdate";
             // 
-            // txtCellphone
+            // txtPhoneNumber
             // 
             // 
             // 
             // 
-            this.txtCellphone.CustomButton.Image = null;
-            this.txtCellphone.CustomButton.Location = new System.Drawing.Point(200, 1);
-            this.txtCellphone.CustomButton.Name = "";
-            this.txtCellphone.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.txtCellphone.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.txtCellphone.CustomButton.TabIndex = 1;
-            this.txtCellphone.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.txtCellphone.CustomButton.UseSelectable = true;
-            this.txtCellphone.CustomButton.Visible = false;
-            this.txtCellphone.Lines = new string[0];
-            this.txtCellphone.Location = new System.Drawing.Point(698, 161);
-            this.txtCellphone.MaxLength = 32767;
-            this.txtCellphone.Name = "txtCellphone";
-            this.txtCellphone.PasswordChar = '\0';
-            this.txtCellphone.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtCellphone.SelectedText = "";
-            this.txtCellphone.SelectionLength = 0;
-            this.txtCellphone.SelectionStart = 0;
-            this.txtCellphone.ShortcutsEnabled = true;
-            this.txtCellphone.Size = new System.Drawing.Size(222, 23);
-            this.txtCellphone.TabIndex = 32;
-            this.txtCellphone.UseSelectable = true;
-            this.txtCellphone.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.txtCellphone.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.txtPhoneNumber.CustomButton.Image = null;
+            this.txtPhoneNumber.CustomButton.Location = new System.Drawing.Point(200, 1);
+            this.txtPhoneNumber.CustomButton.Name = "";
+            this.txtPhoneNumber.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.txtPhoneNumber.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtPhoneNumber.CustomButton.TabIndex = 1;
+            this.txtPhoneNumber.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtPhoneNumber.CustomButton.UseSelectable = true;
+            this.txtPhoneNumber.CustomButton.Visible = false;
+            this.txtPhoneNumber.Lines = new string[0];
+            this.txtPhoneNumber.Location = new System.Drawing.Point(698, 161);
+            this.txtPhoneNumber.MaxLength = 32767;
+            this.txtPhoneNumber.Name = "txtPhoneNumber";
+            this.txtPhoneNumber.PasswordChar = '\0';
+            this.txtPhoneNumber.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtPhoneNumber.SelectedText = "";
+            this.txtPhoneNumber.SelectionLength = 0;
+            this.txtPhoneNumber.SelectionStart = 0;
+            this.txtPhoneNumber.ShortcutsEnabled = true;
+            this.txtPhoneNumber.Size = new System.Drawing.Size(222, 23);
+            this.txtPhoneNumber.TabIndex = 32;
+            this.txtPhoneNumber.UseSelectable = true;
+            this.txtPhoneNumber.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txtPhoneNumber.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
             // lblPhoneNumber
             // 
@@ -503,7 +503,7 @@ namespace Proyecto_Final
             this.Controls.Add(this.bttSearch);
             this.Controls.Add(this.txtBirhDay);
             this.Controls.Add(this.lblBirhdate);
-            this.Controls.Add(this.txtCellphone);
+            this.Controls.Add(this.txtPhoneNumber);
             this.Controls.Add(this.lblPhoneNumber);
             this.Controls.Add(this.txtLastName);
             this.Controls.Add(this.lblLastName);
@@ -534,7 +534,7 @@ namespace Proyecto_Final
         private MetroFramework.Controls.MetroButton bttSearch;
         private MetroFramework.Controls.MetroTextBox txtBirhDay;
         private MetroFramework.Controls.MetroLabel lblBirhdate;
-        private MetroFramework.Controls.MetroTextBox txtCellphone;
+        private MetroFramework.Controls.MetroTextBox txtPhoneNumber;
         private MetroFramework.Controls.MetroLabel lblPhoneNumber;
         private MetroFramework.Controls.MetroTextBox txtLastName;
         private MetroFramework.Controls.MetroLabel lblLastName;

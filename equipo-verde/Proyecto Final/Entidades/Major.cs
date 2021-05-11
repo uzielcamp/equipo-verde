@@ -10,7 +10,7 @@ namespace Proyecto_Final.Entidades
     public class Major
     {
         #region Propiedades Auto implementadas 
-        [key]
+        [Key]
         public int Id { get; set; }
         [Required]
         [StringLength (30)]

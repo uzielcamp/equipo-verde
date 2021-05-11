@@ -16,21 +16,21 @@ namespace Proyecto_Final.Entidades
     [StringLength(30)]
     public string Name { get; set; }
     [Required]
-    [StringLength(30)]
+    [StringLength(100)]
     public string Address { get; set; }
     [Required]
-    [StringLength(30)]
-    public string postalCode { get; set; }
+    [StringLength(10)]
+    public string Postalcode { get; set; }
     [Required]
-    [StringLength(30)]
-    public string phoneNumberc { get; set; }
+    [StringLength(15)]
+    public string Phonenumber { get; set; }
     [Required]
-    [StringLength(30)]
-    public string website { get; set; }
+    [StringLength(240)]
+    public string Website { get; set; }
     [Required]
-    [StringLength(30)]
-    public string email { get; set; }
-    [StringLength(30)]
+    [StringLength(100)]
+    public string Email { get; set; }
+    [StringLength(240)]
     public string Photo { get; set; }
         #endregion
     }

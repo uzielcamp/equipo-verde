@@ -19,12 +19,13 @@ namespace Proyecto_Final.Entidades
         [StringLength(30)]
         public string LastName { get; set; }
         [Required]
-        [StringLength(30)]
+        [StringLength(15)]
         public string Cellphone { get; set; }
-        [StringLength(30)]
+        [StringLength(100)]
         public string Email { get; set; }
-        [StringLength(30)]
+        [StringLength(240)]
         public string Photo { get; set; }
+        [StringLength(100)]
         public string FullName { get { return $"{FirstName}{LastName}"; } }
         #endregion
     }
