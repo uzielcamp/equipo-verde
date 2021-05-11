@@ -11,6 +11,7 @@ namespace Proyecto_Final
    public class DataContext:DbContext
     {
     public DbSet<Contact> Contacts { get; set; }
+        public DbSet <Coordinator> Coordinators { get; set; }
         public DataContext() : base("name=miConexion")
         {
 
