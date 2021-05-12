@@ -111,6 +111,11 @@
     <Compile Include="Major.Designer.cs">
       <DependentUpon>Major.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202105122317465_Datos.cs" />
+    <Compile Include="Migrations\202105122317465_Datos.designer.cs">
+      <DependentUpon>202105122317465_Datos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Student.cs">
@@ -136,6 +141,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Major.resx">
       <DependentUpon>Major.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202105122317465_Datos.resx">
+      <DependentUpon>202105122317465_Datos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
