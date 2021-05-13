@@ -55,11 +55,6 @@ namespace Proyecto_Final
             this.lblId = new MetroFramework.Controls.MetroLabel();
             this.grddatos = new MetroFramework.Controls.MetroGrid();
             this.grdconcentradodedatos = new MetroFramework.Controls.MetroGrid();
-            this.txtCellphones = new MetroFramework.Controls.MetroTextBox();
-            this.lblCellphone = new MetroFramework.Controls.MetroLabel();
-            this.txtemail = new MetroFramework.Controls.MetroTextBox();
-            this.lblemail = new MetroFramework.Controls.MetroLabel();
-            this.studentBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.firstNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lastNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -69,6 +64,11 @@ namespace Proyecto_Final
             this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.photoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fullNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.studentBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.txtCellphones = new MetroFramework.Controls.MetroTextBox();
+            this.lblCellphone = new MetroFramework.Controls.MetroLabel();
+            this.txtemail = new MetroFramework.Controls.MetroTextBox();
+            this.lblemail = new MetroFramework.Controls.MetroLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pctPhoto)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grddatos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grdconcentradodedatos)).BeginInit();
@@ -144,6 +144,7 @@ namespace Proyecto_Final
             this.txtBirhDay.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtBirhDay.CustomButton.UseSelectable = true;
             this.txtBirhDay.CustomButton.Visible = false;
+            this.txtBirhDay.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.studentBindingSource, "Birthdate", true));
             this.txtBirhDay.Lines = new string[0];
             this.txtBirhDay.Location = new System.Drawing.Point(698, 133);
             this.txtBirhDay.MaxLength = 32767;
@@ -183,6 +184,7 @@ namespace Proyecto_Final
             this.txtPhoneNumber.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtPhoneNumber.CustomButton.UseSelectable = true;
             this.txtPhoneNumber.CustomButton.Visible = false;
+            this.txtPhoneNumber.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.studentBindingSource, "PhoneNumber", true));
             this.txtPhoneNumber.Lines = new string[0];
             this.txtPhoneNumber.Location = new System.Drawing.Point(698, 161);
             this.txtPhoneNumber.MaxLength = 32767;
@@ -222,6 +224,7 @@ namespace Proyecto_Final
             this.txtLastName.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtLastName.CustomButton.UseSelectable = true;
             this.txtLastName.CustomButton.Visible = false;
+            this.txtLastName.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.studentBindingSource, "LastName", true));
             this.txtLastName.Lines = new string[0];
             this.txtLastName.Location = new System.Drawing.Point(698, 103);
             this.txtLastName.MaxLength = 32767;
@@ -261,6 +264,7 @@ namespace Proyecto_Final
             this.txtFirstName.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtFirstName.CustomButton.UseSelectable = true;
             this.txtFirstName.CustomButton.Visible = false;
+            this.txtFirstName.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.studentBindingSource, "FirstName", true));
             this.txtFirstName.Lines = new string[0];
             this.txtFirstName.Location = new System.Drawing.Point(698, 74);
             this.txtFirstName.MaxLength = 32767;
@@ -308,6 +312,7 @@ namespace Proyecto_Final
             this.txtId.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtId.CustomButton.UseSelectable = true;
             this.txtId.CustomButton.Visible = false;
+            this.txtId.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.studentBindingSource, "Id", true));
             this.txtId.Lines = new string[0];
             this.txtId.Location = new System.Drawing.Point(698, 45);
             this.txtId.MaxLength = 32767;
@@ -432,88 +437,6 @@ namespace Proyecto_Final
             this.grdconcentradodedatos.Size = new System.Drawing.Size(463, 234);
             this.grdconcentradodedatos.TabIndex = 22;
             // 
-            // txtCellphones
-            // 
-            // 
-            // 
-            // 
-            this.txtCellphones.CustomButton.Image = null;
-            this.txtCellphones.CustomButton.Location = new System.Drawing.Point(200, 1);
-            this.txtCellphones.CustomButton.Name = "";
-            this.txtCellphones.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.txtCellphones.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.txtCellphones.CustomButton.TabIndex = 1;
-            this.txtCellphones.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.txtCellphones.CustomButton.UseSelectable = true;
-            this.txtCellphones.CustomButton.Visible = false;
-            this.txtCellphones.Lines = new string[0];
-            this.txtCellphones.Location = new System.Drawing.Point(698, 193);
-            this.txtCellphones.MaxLength = 32767;
-            this.txtCellphones.Name = "txtCellphones";
-            this.txtCellphones.PasswordChar = '\0';
-            this.txtCellphones.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtCellphones.SelectedText = "";
-            this.txtCellphones.SelectionLength = 0;
-            this.txtCellphones.SelectionStart = 0;
-            this.txtCellphones.ShortcutsEnabled = true;
-            this.txtCellphones.Size = new System.Drawing.Size(222, 23);
-            this.txtCellphones.TabIndex = 42;
-            this.txtCellphones.UseSelectable = true;
-            this.txtCellphones.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.txtCellphones.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // lblCellphone
-            // 
-            this.lblCellphone.AutoSize = true;
-            this.lblCellphone.Location = new System.Drawing.Point(593, 193);
-            this.lblCellphone.Name = "lblCellphone";
-            this.lblCellphone.Size = new System.Drawing.Size(68, 19);
-            this.lblCellphone.TabIndex = 41;
-            this.lblCellphone.Text = "Cellphone";
-            // 
-            // txtemail
-            // 
-            // 
-            // 
-            // 
-            this.txtemail.CustomButton.Image = null;
-            this.txtemail.CustomButton.Location = new System.Drawing.Point(200, 1);
-            this.txtemail.CustomButton.Name = "";
-            this.txtemail.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.txtemail.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.txtemail.CustomButton.TabIndex = 1;
-            this.txtemail.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.txtemail.CustomButton.UseSelectable = true;
-            this.txtemail.CustomButton.Visible = false;
-            this.txtemail.Lines = new string[0];
-            this.txtemail.Location = new System.Drawing.Point(698, 222);
-            this.txtemail.MaxLength = 32767;
-            this.txtemail.Name = "txtemail";
-            this.txtemail.PasswordChar = '\0';
-            this.txtemail.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtemail.SelectedText = "";
-            this.txtemail.SelectionLength = 0;
-            this.txtemail.SelectionStart = 0;
-            this.txtemail.ShortcutsEnabled = true;
-            this.txtemail.Size = new System.Drawing.Size(222, 23);
-            this.txtemail.TabIndex = 44;
-            this.txtemail.UseSelectable = true;
-            this.txtemail.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.txtemail.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // lblemail
-            // 
-            this.lblemail.AutoSize = true;
-            this.lblemail.Location = new System.Drawing.Point(593, 222);
-            this.lblemail.Name = "lblemail";
-            this.lblemail.Size = new System.Drawing.Size(47, 19);
-            this.lblemail.TabIndex = 43;
-            this.lblemail.Text = "e-mail";
-            // 
-            // studentBindingSource
-            // 
-            this.studentBindingSource.DataSource = typeof(Proyecto_Final.Entidades.Student);
-            // 
             // idDataGridViewTextBoxColumn
             // 
             this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
@@ -568,6 +491,90 @@ namespace Proyecto_Final
             this.fullNameDataGridViewTextBoxColumn.HeaderText = "FullName";
             this.fullNameDataGridViewTextBoxColumn.Name = "fullNameDataGridViewTextBoxColumn";
             this.fullNameDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // studentBindingSource
+            // 
+            this.studentBindingSource.DataSource = typeof(Proyecto_Final.Entidades.Student);
+            // 
+            // txtCellphones
+            // 
+            // 
+            // 
+            // 
+            this.txtCellphones.CustomButton.Image = null;
+            this.txtCellphones.CustomButton.Location = new System.Drawing.Point(200, 1);
+            this.txtCellphones.CustomButton.Name = "";
+            this.txtCellphones.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.txtCellphones.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtCellphones.CustomButton.TabIndex = 1;
+            this.txtCellphones.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtCellphones.CustomButton.UseSelectable = true;
+            this.txtCellphones.CustomButton.Visible = false;
+            this.txtCellphones.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.studentBindingSource, "Cellphone", true));
+            this.txtCellphones.Lines = new string[0];
+            this.txtCellphones.Location = new System.Drawing.Point(698, 193);
+            this.txtCellphones.MaxLength = 32767;
+            this.txtCellphones.Name = "txtCellphones";
+            this.txtCellphones.PasswordChar = '\0';
+            this.txtCellphones.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtCellphones.SelectedText = "";
+            this.txtCellphones.SelectionLength = 0;
+            this.txtCellphones.SelectionStart = 0;
+            this.txtCellphones.ShortcutsEnabled = true;
+            this.txtCellphones.Size = new System.Drawing.Size(222, 23);
+            this.txtCellphones.TabIndex = 42;
+            this.txtCellphones.UseSelectable = true;
+            this.txtCellphones.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txtCellphones.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // lblCellphone
+            // 
+            this.lblCellphone.AutoSize = true;
+            this.lblCellphone.Location = new System.Drawing.Point(593, 193);
+            this.lblCellphone.Name = "lblCellphone";
+            this.lblCellphone.Size = new System.Drawing.Size(68, 19);
+            this.lblCellphone.TabIndex = 41;
+            this.lblCellphone.Text = "Cellphone";
+            // 
+            // txtemail
+            // 
+            // 
+            // 
+            // 
+            this.txtemail.CustomButton.Image = null;
+            this.txtemail.CustomButton.Location = new System.Drawing.Point(200, 1);
+            this.txtemail.CustomButton.Name = "";
+            this.txtemail.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.txtemail.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtemail.CustomButton.TabIndex = 1;
+            this.txtemail.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtemail.CustomButton.UseSelectable = true;
+            this.txtemail.CustomButton.Visible = false;
+            this.txtemail.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.studentBindingSource, "Email", true));
+            this.txtemail.Lines = new string[0];
+            this.txtemail.Location = new System.Drawing.Point(698, 222);
+            this.txtemail.MaxLength = 32767;
+            this.txtemail.Name = "txtemail";
+            this.txtemail.PasswordChar = '\0';
+            this.txtemail.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtemail.SelectedText = "";
+            this.txtemail.SelectionLength = 0;
+            this.txtemail.SelectionStart = 0;
+            this.txtemail.ShortcutsEnabled = true;
+            this.txtemail.Size = new System.Drawing.Size(222, 23);
+            this.txtemail.TabIndex = 44;
+            this.txtemail.UseSelectable = true;
+            this.txtemail.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txtemail.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // lblemail
+            // 
+            this.lblemail.AutoSize = true;
+            this.lblemail.Location = new System.Drawing.Point(593, 222);
+            this.lblemail.Name = "lblemail";
+            this.lblemail.Size = new System.Drawing.Size(47, 19);
+            this.lblemail.TabIndex = 43;
+            this.lblemail.Text = "e-mail";
             // 
             // frmStudent
             // 
