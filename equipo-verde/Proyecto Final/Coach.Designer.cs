@@ -42,6 +42,7 @@ namespace Proyecto_Final
             this.bttEdit = new MetroFramework.Controls.MetroButton();
             this.bttAdd = new MetroFramework.Controls.MetroButton();
             this.txtemail = new MetroFramework.Controls.MetroTextBox();
+            this.coachBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.txtCellphone = new MetroFramework.Controls.MetroTextBox();
             this.txtLastName = new MetroFramework.Controls.MetroTextBox();
             this.txtFirstName = new MetroFramework.Controls.MetroTextBox();
@@ -56,19 +57,18 @@ namespace Proyecto_Final
             this.pctphoto = new System.Windows.Forms.PictureBox();
             this.grdadviser = new MetroFramework.Controls.MetroGrid();
             this.grdConcentradodeDatos = new MetroFramework.Controls.MetroGrid();
+            this.txtemails = new MetroFramework.Controls.MetroTextBox();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.firstNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lastNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fullNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cellphoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.photoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fullNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.coachBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.txtemails = new MetroFramework.Controls.MetroTextBox();
+            this.firstNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lastNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.coachBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctphoto)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grdadviser)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grdConcentradodeDatos)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.coachBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // bttSave
@@ -146,6 +146,10 @@ namespace Proyecto_Final
             this.txtemail.UseSelectable = true;
             this.txtemail.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txtemail.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // coachBindingSource
+            // 
+            this.coachBindingSource.DataSource = typeof(Proyecto_Final.Entidades.Coach);
             // 
             // txtCellphone
             // 
@@ -402,12 +406,12 @@ namespace Proyecto_Final
             this.grdConcentradodeDatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grdConcentradodeDatos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idDataGridViewTextBoxColumn,
-            this.firstNameDataGridViewTextBoxColumn,
-            this.lastNameDataGridViewTextBoxColumn,
+            this.fullNameDataGridViewTextBoxColumn,
             this.cellphoneDataGridViewTextBoxColumn,
             this.emailDataGridViewTextBoxColumn,
             this.photoDataGridViewTextBoxColumn,
-            this.fullNameDataGridViewTextBoxColumn});
+            this.firstNameDataGridViewTextBoxColumn,
+            this.lastNameDataGridViewTextBoxColumn});
             this.grdConcentradodeDatos.DataSource = this.coachBindingSource;
             dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
@@ -435,53 +439,6 @@ namespace Proyecto_Final
             this.grdConcentradodeDatos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grdConcentradodeDatos.Size = new System.Drawing.Size(463, 234);
             this.grdConcentradodeDatos.TabIndex = 38;
-            // 
-            // idDataGridViewTextBoxColumn
-            // 
-            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
-            this.idDataGridViewTextBoxColumn.HeaderText = "Id";
-            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
-            // 
-            // firstNameDataGridViewTextBoxColumn
-            // 
-            this.firstNameDataGridViewTextBoxColumn.DataPropertyName = "FirstName";
-            this.firstNameDataGridViewTextBoxColumn.HeaderText = "FirstName";
-            this.firstNameDataGridViewTextBoxColumn.Name = "firstNameDataGridViewTextBoxColumn";
-            // 
-            // lastNameDataGridViewTextBoxColumn
-            // 
-            this.lastNameDataGridViewTextBoxColumn.DataPropertyName = "LastName";
-            this.lastNameDataGridViewTextBoxColumn.HeaderText = "LastName";
-            this.lastNameDataGridViewTextBoxColumn.Name = "lastNameDataGridViewTextBoxColumn";
-            // 
-            // cellphoneDataGridViewTextBoxColumn
-            // 
-            this.cellphoneDataGridViewTextBoxColumn.DataPropertyName = "Cellphone";
-            this.cellphoneDataGridViewTextBoxColumn.HeaderText = "Cellphone";
-            this.cellphoneDataGridViewTextBoxColumn.Name = "cellphoneDataGridViewTextBoxColumn";
-            // 
-            // emailDataGridViewTextBoxColumn
-            // 
-            this.emailDataGridViewTextBoxColumn.DataPropertyName = "Email";
-            this.emailDataGridViewTextBoxColumn.HeaderText = "Email";
-            this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
-            // 
-            // photoDataGridViewTextBoxColumn
-            // 
-            this.photoDataGridViewTextBoxColumn.DataPropertyName = "Photo";
-            this.photoDataGridViewTextBoxColumn.HeaderText = "Photo";
-            this.photoDataGridViewTextBoxColumn.Name = "photoDataGridViewTextBoxColumn";
-            // 
-            // fullNameDataGridViewTextBoxColumn
-            // 
-            this.fullNameDataGridViewTextBoxColumn.DataPropertyName = "FullName";
-            this.fullNameDataGridViewTextBoxColumn.HeaderText = "FullName";
-            this.fullNameDataGridViewTextBoxColumn.Name = "fullNameDataGridViewTextBoxColumn";
-            this.fullNameDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // coachBindingSource
-            // 
-            this.coachBindingSource.DataSource = typeof(Proyecto_Final.Entidades.Coach);
             // 
             // txtemails
             // 
@@ -514,6 +471,51 @@ namespace Proyecto_Final
             this.txtemails.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txtemails.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
+            // idDataGridViewTextBoxColumn
+            // 
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
+            this.idDataGridViewTextBoxColumn.HeaderText = "Id";
+            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            // 
+            // fullNameDataGridViewTextBoxColumn
+            // 
+            this.fullNameDataGridViewTextBoxColumn.DataPropertyName = "FullName";
+            this.fullNameDataGridViewTextBoxColumn.HeaderText = "FullName";
+            this.fullNameDataGridViewTextBoxColumn.Name = "fullNameDataGridViewTextBoxColumn";
+            this.fullNameDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // cellphoneDataGridViewTextBoxColumn
+            // 
+            this.cellphoneDataGridViewTextBoxColumn.DataPropertyName = "Cellphone";
+            this.cellphoneDataGridViewTextBoxColumn.HeaderText = "Cellphone";
+            this.cellphoneDataGridViewTextBoxColumn.Name = "cellphoneDataGridViewTextBoxColumn";
+            // 
+            // emailDataGridViewTextBoxColumn
+            // 
+            this.emailDataGridViewTextBoxColumn.DataPropertyName = "Email";
+            this.emailDataGridViewTextBoxColumn.HeaderText = "Email";
+            this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
+            // 
+            // photoDataGridViewTextBoxColumn
+            // 
+            this.photoDataGridViewTextBoxColumn.DataPropertyName = "Photo";
+            this.photoDataGridViewTextBoxColumn.HeaderText = "Photo";
+            this.photoDataGridViewTextBoxColumn.Name = "photoDataGridViewTextBoxColumn";
+            // 
+            // firstNameDataGridViewTextBoxColumn
+            // 
+            this.firstNameDataGridViewTextBoxColumn.DataPropertyName = "FirstName";
+            this.firstNameDataGridViewTextBoxColumn.HeaderText = "FirstName";
+            this.firstNameDataGridViewTextBoxColumn.Name = "firstNameDataGridViewTextBoxColumn";
+            this.firstNameDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // lastNameDataGridViewTextBoxColumn
+            // 
+            this.lastNameDataGridViewTextBoxColumn.DataPropertyName = "LastName";
+            this.lastNameDataGridViewTextBoxColumn.HeaderText = "LastName";
+            this.lastNameDataGridViewTextBoxColumn.Name = "lastNameDataGridViewTextBoxColumn";
+            this.lastNameDataGridViewTextBoxColumn.Visible = false;
+            // 
             // frmCoach
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -542,10 +544,10 @@ namespace Proyecto_Final
             this.Controls.Add(this.grdConcentradodeDatos);
             this.Name = "frmCoach";
             this.Text = "Coach";
+            ((System.ComponentModel.ISupportInitialize)(this.coachBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctphoto)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grdadviser)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grdConcentradodeDatos)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.coachBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -574,13 +576,13 @@ namespace Proyecto_Final
         private MetroFramework.Controls.MetroGrid grdadviser;
         private MetroFramework.Controls.MetroGrid grdConcentradodeDatos;
         private MetroFramework.Controls.MetroTextBox txtemails;
+        private System.Windows.Forms.BindingSource coachBindingSource;
         private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn firstNameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn lastNameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fullNameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn cellphoneDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn photoDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fullNameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.BindingSource coachBindingSource;
+        private System.Windows.Forms.DataGridViewTextBoxColumn firstNameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn lastNameDataGridViewTextBoxColumn;
     }
 }

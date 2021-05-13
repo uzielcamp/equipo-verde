@@ -42,6 +42,7 @@ namespace Proyecto_Final
             this.bttEdit = new MetroFramework.Controls.MetroButton();
             this.bttAdd = new MetroFramework.Controls.MetroButton();
             this.txtemail = new MetroFramework.Controls.MetroTextBox();
+            this.companyBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.txtpostalCode = new MetroFramework.Controls.MetroTextBox();
             this.txtaddress = new MetroFramework.Controls.MetroTextBox();
             this.txtName = new MetroFramework.Controls.MetroTextBox();
@@ -56,23 +57,22 @@ namespace Proyecto_Final
             this.pctphoto = new System.Windows.Forms.PictureBox();
             this.grdadviser = new MetroFramework.Controls.MetroGrid();
             this.metroGrid1 = new MetroFramework.Controls.MetroGrid();
-            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.addressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.postalcodeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.phonenumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.websiteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.photoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.companyBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.txtphoneNumber = new MetroFramework.Controls.MetroTextBox();
             this.txtwebsite = new MetroFramework.Controls.MetroTextBox();
             this.lblwebsite = new MetroFramework.Controls.MetroLabel();
             this.lblphoneNumberc = new MetroFramework.Controls.MetroLabel();
+            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.websiteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.phonenumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.addressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.postalcodeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.photoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.companyBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctphoto)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grdadviser)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.metroGrid1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.companyBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // bttSave
@@ -150,6 +150,10 @@ namespace Proyecto_Final
             this.txtemail.UseSelectable = true;
             this.txtemail.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txtemail.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // companyBindingSource
+            // 
+            this.companyBindingSource.DataSource = typeof(Proyecto_Final.Entidades.Company);
             // 
             // txtpostalCode
             // 
@@ -408,11 +412,11 @@ namespace Proyecto_Final
             this.metroGrid1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idDataGridViewTextBoxColumn,
             this.nameDataGridViewTextBoxColumn,
+            this.emailDataGridViewTextBoxColumn,
+            this.websiteDataGridViewTextBoxColumn,
+            this.phonenumberDataGridViewTextBoxColumn,
             this.addressDataGridViewTextBoxColumn,
             this.postalcodeDataGridViewTextBoxColumn,
-            this.phonenumberDataGridViewTextBoxColumn,
-            this.websiteDataGridViewTextBoxColumn,
-            this.emailDataGridViewTextBoxColumn,
             this.photoDataGridViewTextBoxColumn});
             this.metroGrid1.DataSource = this.companyBindingSource;
             dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -441,58 +445,6 @@ namespace Proyecto_Final
             this.metroGrid1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.metroGrid1.Size = new System.Drawing.Size(463, 234);
             this.metroGrid1.TabIndex = 61;
-            // 
-            // idDataGridViewTextBoxColumn
-            // 
-            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
-            this.idDataGridViewTextBoxColumn.HeaderText = "Id";
-            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
-            // 
-            // nameDataGridViewTextBoxColumn
-            // 
-            this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
-            this.nameDataGridViewTextBoxColumn.HeaderText = "Name";
-            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
-            // 
-            // addressDataGridViewTextBoxColumn
-            // 
-            this.addressDataGridViewTextBoxColumn.DataPropertyName = "Address";
-            this.addressDataGridViewTextBoxColumn.HeaderText = "Address";
-            this.addressDataGridViewTextBoxColumn.Name = "addressDataGridViewTextBoxColumn";
-            // 
-            // postalcodeDataGridViewTextBoxColumn
-            // 
-            this.postalcodeDataGridViewTextBoxColumn.DataPropertyName = "Postalcode";
-            this.postalcodeDataGridViewTextBoxColumn.HeaderText = "Postalcode";
-            this.postalcodeDataGridViewTextBoxColumn.Name = "postalcodeDataGridViewTextBoxColumn";
-            // 
-            // phonenumberDataGridViewTextBoxColumn
-            // 
-            this.phonenumberDataGridViewTextBoxColumn.DataPropertyName = "Phonenumber";
-            this.phonenumberDataGridViewTextBoxColumn.HeaderText = "Phonenumber";
-            this.phonenumberDataGridViewTextBoxColumn.Name = "phonenumberDataGridViewTextBoxColumn";
-            // 
-            // websiteDataGridViewTextBoxColumn
-            // 
-            this.websiteDataGridViewTextBoxColumn.DataPropertyName = "Website";
-            this.websiteDataGridViewTextBoxColumn.HeaderText = "Website";
-            this.websiteDataGridViewTextBoxColumn.Name = "websiteDataGridViewTextBoxColumn";
-            // 
-            // emailDataGridViewTextBoxColumn
-            // 
-            this.emailDataGridViewTextBoxColumn.DataPropertyName = "Email";
-            this.emailDataGridViewTextBoxColumn.HeaderText = "Email";
-            this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
-            // 
-            // photoDataGridViewTextBoxColumn
-            // 
-            this.photoDataGridViewTextBoxColumn.DataPropertyName = "Photo";
-            this.photoDataGridViewTextBoxColumn.HeaderText = "Photo";
-            this.photoDataGridViewTextBoxColumn.Name = "photoDataGridViewTextBoxColumn";
-            // 
-            // companyBindingSource
-            // 
-            this.companyBindingSource.DataSource = typeof(Proyecto_Final.Entidades.Company);
             // 
             // txtphoneNumber
             // 
@@ -574,6 +526,54 @@ namespace Proyecto_Final
             this.lblphoneNumberc.TabIndex = 85;
             this.lblphoneNumberc.Text = "Phone Number";
             // 
+            // idDataGridViewTextBoxColumn
+            // 
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
+            this.idDataGridViewTextBoxColumn.HeaderText = "Id";
+            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            // 
+            // nameDataGridViewTextBoxColumn
+            // 
+            this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
+            this.nameDataGridViewTextBoxColumn.HeaderText = "Name";
+            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
+            // 
+            // emailDataGridViewTextBoxColumn
+            // 
+            this.emailDataGridViewTextBoxColumn.DataPropertyName = "Email";
+            this.emailDataGridViewTextBoxColumn.HeaderText = "Email";
+            this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
+            // 
+            // websiteDataGridViewTextBoxColumn
+            // 
+            this.websiteDataGridViewTextBoxColumn.DataPropertyName = "Website";
+            this.websiteDataGridViewTextBoxColumn.HeaderText = "Website";
+            this.websiteDataGridViewTextBoxColumn.Name = "websiteDataGridViewTextBoxColumn";
+            // 
+            // phonenumberDataGridViewTextBoxColumn
+            // 
+            this.phonenumberDataGridViewTextBoxColumn.DataPropertyName = "Phonenumber";
+            this.phonenumberDataGridViewTextBoxColumn.HeaderText = "Phonenumber";
+            this.phonenumberDataGridViewTextBoxColumn.Name = "phonenumberDataGridViewTextBoxColumn";
+            // 
+            // addressDataGridViewTextBoxColumn
+            // 
+            this.addressDataGridViewTextBoxColumn.DataPropertyName = "Address";
+            this.addressDataGridViewTextBoxColumn.HeaderText = "Address";
+            this.addressDataGridViewTextBoxColumn.Name = "addressDataGridViewTextBoxColumn";
+            // 
+            // postalcodeDataGridViewTextBoxColumn
+            // 
+            this.postalcodeDataGridViewTextBoxColumn.DataPropertyName = "Postalcode";
+            this.postalcodeDataGridViewTextBoxColumn.HeaderText = "Postalcode";
+            this.postalcodeDataGridViewTextBoxColumn.Name = "postalcodeDataGridViewTextBoxColumn";
+            // 
+            // photoDataGridViewTextBoxColumn
+            // 
+            this.photoDataGridViewTextBoxColumn.DataPropertyName = "Photo";
+            this.photoDataGridViewTextBoxColumn.HeaderText = "Photo";
+            this.photoDataGridViewTextBoxColumn.Name = "photoDataGridViewTextBoxColumn";
+            // 
             // frmCompany
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -605,10 +605,10 @@ namespace Proyecto_Final
             this.Controls.Add(this.metroGrid1);
             this.Name = "frmCompany";
             this.Text = "Company";
+            ((System.ComponentModel.ISupportInitialize)(this.companyBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctphoto)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grdadviser)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.metroGrid1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.companyBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -640,14 +640,14 @@ namespace Proyecto_Final
         private MetroFramework.Controls.MetroTextBox txtwebsite;
         private MetroFramework.Controls.MetroLabel lblwebsite;
         private MetroFramework.Controls.MetroLabel lblphoneNumberc;
+        private System.Windows.Forms.BindingSource companyBindingSource;
         private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn websiteDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn phonenumberDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn addressDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn postalcodeDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn phonenumberDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn websiteDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn photoDataGridViewTextBoxColumn;
-        private System.Windows.Forms.BindingSource companyBindingSource;
     }
 }
