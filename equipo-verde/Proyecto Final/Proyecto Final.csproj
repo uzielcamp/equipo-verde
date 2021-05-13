@@ -157,7 +157,16 @@
     <EmbeddedResource Include="Student.resx">
       <DependentUpon>Student.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="DataContext.datasource" />
+    <None Include="frmAdviser.datasource" />
+    <None Include="frmCoach.datasource" />
+    <None Include="frmCompany.datasource" />
+    <None Include="frmContact.datasource" />
+    <None Include="frmCoordinator.datasource" />
+    <None Include="frmMajor.datasource" />
+    <None Include="frmStudent.datasource" />
     <None Include="packages.config" />
+    <None Include="Program.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -167,6 +176,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Proyecto_Final.Entidades.Adviser.datasource" />
+    <None Include="Proyecto_Final.Entidades.Coach.datasource" />
+    <None Include="Proyecto_Final.Entidades.Company.datasource" />
+    <None Include="Proyecto_Final.Entidades.Contact.datasource" />
+    <None Include="Proyecto_Final.Entidades.Coordinator.datasource" />
+    <None Include="Proyecto_Final.Entidades.Major.datasource" />
+    <None Include="Proyecto_Final.Entidades.Student.datasource" />
+    <None Include="Proyecto_Final.Migrations.Configuration.datasource" />
+    <None Include="Proyecto_Final.Migrations.Datos.datasource" />
+    <None Include="Proyecto_Final.Properties.Resources.datasource" />
+    <None Include="Proyecto_Final.Properties.Settings.datasource" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
