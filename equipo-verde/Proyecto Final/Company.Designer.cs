@@ -56,11 +56,6 @@ namespace Proyecto_Final
             this.pctphoto = new System.Windows.Forms.PictureBox();
             this.grdadviser = new MetroFramework.Controls.MetroGrid();
             this.metroGrid1 = new MetroFramework.Controls.MetroGrid();
-            this.txtphoneNumber = new MetroFramework.Controls.MetroTextBox();
-            this.txtwebsite = new MetroFramework.Controls.MetroTextBox();
-            this.lblwebsite = new MetroFramework.Controls.MetroLabel();
-            this.lblphoneNumberc = new MetroFramework.Controls.MetroLabel();
-            this.companyBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.addressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -69,6 +64,11 @@ namespace Proyecto_Final
             this.websiteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.photoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.companyBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.txtphoneNumber = new MetroFramework.Controls.MetroTextBox();
+            this.txtwebsite = new MetroFramework.Controls.MetroTextBox();
+            this.lblwebsite = new MetroFramework.Controls.MetroLabel();
+            this.lblphoneNumberc = new MetroFramework.Controls.MetroLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pctphoto)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grdadviser)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.metroGrid1)).BeginInit();
@@ -134,6 +134,7 @@ namespace Proyecto_Final
             this.txtemail.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtemail.CustomButton.UseSelectable = true;
             this.txtemail.CustomButton.Visible = false;
+            this.txtemail.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.companyBindingSource, "Email", true));
             this.txtemail.Lines = new string[0];
             this.txtemail.Location = new System.Drawing.Point(698, 222);
             this.txtemail.MaxLength = 32767;
@@ -164,6 +165,7 @@ namespace Proyecto_Final
             this.txtpostalCode.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtpostalCode.CustomButton.UseSelectable = true;
             this.txtpostalCode.CustomButton.Visible = false;
+            this.txtpostalCode.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.companyBindingSource, "Postalcode", true));
             this.txtpostalCode.Lines = new string[0];
             this.txtpostalCode.Location = new System.Drawing.Point(698, 133);
             this.txtpostalCode.MaxLength = 32767;
@@ -194,6 +196,7 @@ namespace Proyecto_Final
             this.txtaddress.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtaddress.CustomButton.UseSelectable = true;
             this.txtaddress.CustomButton.Visible = false;
+            this.txtaddress.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.companyBindingSource, "Address", true));
             this.txtaddress.Lines = new string[0];
             this.txtaddress.Location = new System.Drawing.Point(698, 103);
             this.txtaddress.MaxLength = 32767;
@@ -224,6 +227,7 @@ namespace Proyecto_Final
             this.txtName.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtName.CustomButton.UseSelectable = true;
             this.txtName.CustomButton.Visible = false;
+            this.txtName.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.companyBindingSource, "Name", true));
             this.txtName.Lines = new string[0];
             this.txtName.Location = new System.Drawing.Point(698, 74);
             this.txtName.MaxLength = 32767;
@@ -254,6 +258,7 @@ namespace Proyecto_Final
             this.txtId.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtId.CustomButton.UseSelectable = true;
             this.txtId.CustomButton.Visible = false;
+            this.txtId.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.companyBindingSource, "Id", true));
             this.txtId.Lines = new string[0];
             this.txtId.Location = new System.Drawing.Point(698, 45);
             this.txtId.MaxLength = 32767;
@@ -437,88 +442,6 @@ namespace Proyecto_Final
             this.metroGrid1.Size = new System.Drawing.Size(463, 234);
             this.metroGrid1.TabIndex = 61;
             // 
-            // txtphoneNumber
-            // 
-            // 
-            // 
-            // 
-            this.txtphoneNumber.CustomButton.Image = null;
-            this.txtphoneNumber.CustomButton.Location = new System.Drawing.Point(200, 1);
-            this.txtphoneNumber.CustomButton.Name = "";
-            this.txtphoneNumber.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.txtphoneNumber.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.txtphoneNumber.CustomButton.TabIndex = 1;
-            this.txtphoneNumber.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.txtphoneNumber.CustomButton.UseSelectable = true;
-            this.txtphoneNumber.CustomButton.Visible = false;
-            this.txtphoneNumber.Lines = new string[0];
-            this.txtphoneNumber.Location = new System.Drawing.Point(698, 161);
-            this.txtphoneNumber.MaxLength = 32767;
-            this.txtphoneNumber.Name = "txtphoneNumber";
-            this.txtphoneNumber.PasswordChar = '\0';
-            this.txtphoneNumber.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtphoneNumber.SelectedText = "";
-            this.txtphoneNumber.SelectionLength = 0;
-            this.txtphoneNumber.SelectionStart = 0;
-            this.txtphoneNumber.ShortcutsEnabled = true;
-            this.txtphoneNumber.Size = new System.Drawing.Size(222, 23);
-            this.txtphoneNumber.TabIndex = 82;
-            this.txtphoneNumber.UseSelectable = true;
-            this.txtphoneNumber.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.txtphoneNumber.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // txtwebsite
-            // 
-            // 
-            // 
-            // 
-            this.txtwebsite.CustomButton.Image = null;
-            this.txtwebsite.CustomButton.Location = new System.Drawing.Point(200, 1);
-            this.txtwebsite.CustomButton.Name = "";
-            this.txtwebsite.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.txtwebsite.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.txtwebsite.CustomButton.TabIndex = 1;
-            this.txtwebsite.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.txtwebsite.CustomButton.UseSelectable = true;
-            this.txtwebsite.CustomButton.Visible = false;
-            this.txtwebsite.Lines = new string[0];
-            this.txtwebsite.Location = new System.Drawing.Point(698, 193);
-            this.txtwebsite.MaxLength = 32767;
-            this.txtwebsite.Name = "txtwebsite";
-            this.txtwebsite.PasswordChar = '\0';
-            this.txtwebsite.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtwebsite.SelectedText = "";
-            this.txtwebsite.SelectionLength = 0;
-            this.txtwebsite.SelectionStart = 0;
-            this.txtwebsite.ShortcutsEnabled = true;
-            this.txtwebsite.Size = new System.Drawing.Size(222, 23);
-            this.txtwebsite.TabIndex = 83;
-            this.txtwebsite.UseSelectable = true;
-            this.txtwebsite.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.txtwebsite.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // lblwebsite
-            // 
-            this.lblwebsite.AutoSize = true;
-            this.lblwebsite.Location = new System.Drawing.Point(593, 193);
-            this.lblwebsite.Name = "lblwebsite";
-            this.lblwebsite.Size = new System.Drawing.Size(55, 19);
-            this.lblwebsite.TabIndex = 84;
-            this.lblwebsite.Text = "Website";
-            // 
-            // lblphoneNumberc
-            // 
-            this.lblphoneNumberc.AutoSize = true;
-            this.lblphoneNumberc.Location = new System.Drawing.Point(590, 161);
-            this.lblphoneNumberc.Name = "lblphoneNumberc";
-            this.lblphoneNumberc.Size = new System.Drawing.Size(99, 19);
-            this.lblphoneNumberc.TabIndex = 85;
-            this.lblphoneNumberc.Text = "Phone Number";
-            // 
-            // companyBindingSource
-            // 
-            this.companyBindingSource.DataSource = typeof(Proyecto_Final.Entidades.Company);
-            // 
             // idDataGridViewTextBoxColumn
             // 
             this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
@@ -566,6 +489,90 @@ namespace Proyecto_Final
             this.photoDataGridViewTextBoxColumn.DataPropertyName = "Photo";
             this.photoDataGridViewTextBoxColumn.HeaderText = "Photo";
             this.photoDataGridViewTextBoxColumn.Name = "photoDataGridViewTextBoxColumn";
+            // 
+            // companyBindingSource
+            // 
+            this.companyBindingSource.DataSource = typeof(Proyecto_Final.Entidades.Company);
+            // 
+            // txtphoneNumber
+            // 
+            // 
+            // 
+            // 
+            this.txtphoneNumber.CustomButton.Image = null;
+            this.txtphoneNumber.CustomButton.Location = new System.Drawing.Point(200, 1);
+            this.txtphoneNumber.CustomButton.Name = "";
+            this.txtphoneNumber.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.txtphoneNumber.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtphoneNumber.CustomButton.TabIndex = 1;
+            this.txtphoneNumber.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtphoneNumber.CustomButton.UseSelectable = true;
+            this.txtphoneNumber.CustomButton.Visible = false;
+            this.txtphoneNumber.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.companyBindingSource, "Phonenumber", true));
+            this.txtphoneNumber.Lines = new string[0];
+            this.txtphoneNumber.Location = new System.Drawing.Point(698, 161);
+            this.txtphoneNumber.MaxLength = 32767;
+            this.txtphoneNumber.Name = "txtphoneNumber";
+            this.txtphoneNumber.PasswordChar = '\0';
+            this.txtphoneNumber.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtphoneNumber.SelectedText = "";
+            this.txtphoneNumber.SelectionLength = 0;
+            this.txtphoneNumber.SelectionStart = 0;
+            this.txtphoneNumber.ShortcutsEnabled = true;
+            this.txtphoneNumber.Size = new System.Drawing.Size(222, 23);
+            this.txtphoneNumber.TabIndex = 82;
+            this.txtphoneNumber.UseSelectable = true;
+            this.txtphoneNumber.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txtphoneNumber.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // txtwebsite
+            // 
+            // 
+            // 
+            // 
+            this.txtwebsite.CustomButton.Image = null;
+            this.txtwebsite.CustomButton.Location = new System.Drawing.Point(200, 1);
+            this.txtwebsite.CustomButton.Name = "";
+            this.txtwebsite.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.txtwebsite.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtwebsite.CustomButton.TabIndex = 1;
+            this.txtwebsite.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtwebsite.CustomButton.UseSelectable = true;
+            this.txtwebsite.CustomButton.Visible = false;
+            this.txtwebsite.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.companyBindingSource, "Website", true));
+            this.txtwebsite.Lines = new string[0];
+            this.txtwebsite.Location = new System.Drawing.Point(698, 193);
+            this.txtwebsite.MaxLength = 32767;
+            this.txtwebsite.Name = "txtwebsite";
+            this.txtwebsite.PasswordChar = '\0';
+            this.txtwebsite.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtwebsite.SelectedText = "";
+            this.txtwebsite.SelectionLength = 0;
+            this.txtwebsite.SelectionStart = 0;
+            this.txtwebsite.ShortcutsEnabled = true;
+            this.txtwebsite.Size = new System.Drawing.Size(222, 23);
+            this.txtwebsite.TabIndex = 83;
+            this.txtwebsite.UseSelectable = true;
+            this.txtwebsite.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txtwebsite.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // lblwebsite
+            // 
+            this.lblwebsite.AutoSize = true;
+            this.lblwebsite.Location = new System.Drawing.Point(593, 193);
+            this.lblwebsite.Name = "lblwebsite";
+            this.lblwebsite.Size = new System.Drawing.Size(55, 19);
+            this.lblwebsite.TabIndex = 84;
+            this.lblwebsite.Text = "Website";
+            // 
+            // lblphoneNumberc
+            // 
+            this.lblphoneNumberc.AutoSize = true;
+            this.lblphoneNumberc.Location = new System.Drawing.Point(590, 161);
+            this.lblphoneNumberc.Name = "lblphoneNumberc";
+            this.lblphoneNumberc.Size = new System.Drawing.Size(99, 19);
+            this.lblphoneNumberc.TabIndex = 85;
+            this.lblphoneNumberc.Text = "Phone Number";
             // 
             // frmCompany
             // 
