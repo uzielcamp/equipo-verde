@@ -37,6 +37,14 @@ namespace Proyecto_Final
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.grdconcentradodedatos = new MetroFramework.Controls.MetroGrid();
+            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.firstNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lastNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cellphoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.photoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fullNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.coordinatorBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.grddatos = new MetroFramework.Controls.MetroGrid();
             this.txtId = new MetroFramework.Controls.MetroTextBox();
             this.lblId = new MetroFramework.Controls.MetroLabel();
@@ -55,18 +63,10 @@ namespace Proyecto_Final
             this.bttDelete = new MetroFramework.Controls.MetroButton();
             this.bttCancel = new MetroFramework.Controls.MetroButton();
             this.bttSave = new MetroFramework.Controls.MetroButton();
-            this.coordinatorBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.firstNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lastNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cellphoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.photoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fullNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.grdconcentradodedatos)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.coordinatorBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grddatos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctPhoto)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.coordinatorBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // grdconcentradodedatos
@@ -121,6 +121,53 @@ namespace Proyecto_Final
             this.grdconcentradodedatos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grdconcentradodedatos.Size = new System.Drawing.Size(463, 234);
             this.grdconcentradodedatos.TabIndex = 0;
+            // 
+            // idDataGridViewTextBoxColumn
+            // 
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
+            this.idDataGridViewTextBoxColumn.HeaderText = "Id";
+            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            // 
+            // firstNameDataGridViewTextBoxColumn
+            // 
+            this.firstNameDataGridViewTextBoxColumn.DataPropertyName = "FirstName";
+            this.firstNameDataGridViewTextBoxColumn.HeaderText = "FirstName";
+            this.firstNameDataGridViewTextBoxColumn.Name = "firstNameDataGridViewTextBoxColumn";
+            // 
+            // lastNameDataGridViewTextBoxColumn
+            // 
+            this.lastNameDataGridViewTextBoxColumn.DataPropertyName = "LastName";
+            this.lastNameDataGridViewTextBoxColumn.HeaderText = "LastName";
+            this.lastNameDataGridViewTextBoxColumn.Name = "lastNameDataGridViewTextBoxColumn";
+            // 
+            // cellphoneDataGridViewTextBoxColumn
+            // 
+            this.cellphoneDataGridViewTextBoxColumn.DataPropertyName = "Cellphone";
+            this.cellphoneDataGridViewTextBoxColumn.HeaderText = "Cellphone";
+            this.cellphoneDataGridViewTextBoxColumn.Name = "cellphoneDataGridViewTextBoxColumn";
+            // 
+            // emailDataGridViewTextBoxColumn
+            // 
+            this.emailDataGridViewTextBoxColumn.DataPropertyName = "Email";
+            this.emailDataGridViewTextBoxColumn.HeaderText = "Email";
+            this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
+            // 
+            // photoDataGridViewTextBoxColumn
+            // 
+            this.photoDataGridViewTextBoxColumn.DataPropertyName = "Photo";
+            this.photoDataGridViewTextBoxColumn.HeaderText = "Photo";
+            this.photoDataGridViewTextBoxColumn.Name = "photoDataGridViewTextBoxColumn";
+            // 
+            // fullNameDataGridViewTextBoxColumn
+            // 
+            this.fullNameDataGridViewTextBoxColumn.DataPropertyName = "FullName";
+            this.fullNameDataGridViewTextBoxColumn.HeaderText = "FullName";
+            this.fullNameDataGridViewTextBoxColumn.Name = "fullNameDataGridViewTextBoxColumn";
+            this.fullNameDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // coordinatorBindingSource
+            // 
+            this.coordinatorBindingSource.DataSource = typeof(Proyecto_Final.Entidades.Coordinator);
             // 
             // grddatos
             // 
@@ -180,6 +227,7 @@ namespace Proyecto_Final
             this.txtId.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtId.CustomButton.UseSelectable = true;
             this.txtId.CustomButton.Visible = false;
+            this.txtId.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.coordinatorBindingSource, "Id", true));
             this.txtId.Lines = new string[0];
             this.txtId.Location = new System.Drawing.Point(698, 45);
             this.txtId.MaxLength = 32767;
@@ -227,6 +275,7 @@ namespace Proyecto_Final
             this.txtFirstName.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtFirstName.CustomButton.UseSelectable = true;
             this.txtFirstName.CustomButton.Visible = false;
+            this.txtFirstName.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.coordinatorBindingSource, "FirstName", true));
             this.txtFirstName.Lines = new string[0];
             this.txtFirstName.Location = new System.Drawing.Point(698, 74);
             this.txtFirstName.MaxLength = 32767;
@@ -266,6 +315,7 @@ namespace Proyecto_Final
             this.txtLastName.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtLastName.CustomButton.UseSelectable = true;
             this.txtLastName.CustomButton.Visible = false;
+            this.txtLastName.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.coordinatorBindingSource, "LastName", true));
             this.txtLastName.Lines = new string[0];
             this.txtLastName.Location = new System.Drawing.Point(698, 103);
             this.txtLastName.MaxLength = 32767;
@@ -305,6 +355,7 @@ namespace Proyecto_Final
             this.txtCellphone.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtCellphone.CustomButton.UseSelectable = true;
             this.txtCellphone.CustomButton.Visible = false;
+            this.txtCellphone.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.coordinatorBindingSource, "Cellphone", true));
             this.txtCellphone.Lines = new string[0];
             this.txtCellphone.Location = new System.Drawing.Point(698, 133);
             this.txtCellphone.MaxLength = 32767;
@@ -344,6 +395,7 @@ namespace Proyecto_Final
             this.txtemail.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtemail.CustomButton.UseSelectable = true;
             this.txtemail.CustomButton.Visible = false;
+            this.txtemail.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.coordinatorBindingSource, "Email", true));
             this.txtemail.Lines = new string[0];
             this.txtemail.Location = new System.Drawing.Point(698, 161);
             this.txtemail.MaxLength = 32767;
@@ -423,53 +475,6 @@ namespace Proyecto_Final
             this.bttSave.Text = "Save";
             this.bttSave.UseSelectable = true;
             // 
-            // coordinatorBindingSource
-            // 
-            this.coordinatorBindingSource.DataSource = typeof(Proyecto_Final.Entidades.Coordinator);
-            // 
-            // idDataGridViewTextBoxColumn
-            // 
-            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
-            this.idDataGridViewTextBoxColumn.HeaderText = "Id";
-            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
-            // 
-            // firstNameDataGridViewTextBoxColumn
-            // 
-            this.firstNameDataGridViewTextBoxColumn.DataPropertyName = "FirstName";
-            this.firstNameDataGridViewTextBoxColumn.HeaderText = "FirstName";
-            this.firstNameDataGridViewTextBoxColumn.Name = "firstNameDataGridViewTextBoxColumn";
-            // 
-            // lastNameDataGridViewTextBoxColumn
-            // 
-            this.lastNameDataGridViewTextBoxColumn.DataPropertyName = "LastName";
-            this.lastNameDataGridViewTextBoxColumn.HeaderText = "LastName";
-            this.lastNameDataGridViewTextBoxColumn.Name = "lastNameDataGridViewTextBoxColumn";
-            // 
-            // cellphoneDataGridViewTextBoxColumn
-            // 
-            this.cellphoneDataGridViewTextBoxColumn.DataPropertyName = "Cellphone";
-            this.cellphoneDataGridViewTextBoxColumn.HeaderText = "Cellphone";
-            this.cellphoneDataGridViewTextBoxColumn.Name = "cellphoneDataGridViewTextBoxColumn";
-            // 
-            // emailDataGridViewTextBoxColumn
-            // 
-            this.emailDataGridViewTextBoxColumn.DataPropertyName = "Email";
-            this.emailDataGridViewTextBoxColumn.HeaderText = "Email";
-            this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
-            // 
-            // photoDataGridViewTextBoxColumn
-            // 
-            this.photoDataGridViewTextBoxColumn.DataPropertyName = "Photo";
-            this.photoDataGridViewTextBoxColumn.HeaderText = "Photo";
-            this.photoDataGridViewTextBoxColumn.Name = "photoDataGridViewTextBoxColumn";
-            // 
-            // fullNameDataGridViewTextBoxColumn
-            // 
-            this.fullNameDataGridViewTextBoxColumn.DataPropertyName = "FullName";
-            this.fullNameDataGridViewTextBoxColumn.HeaderText = "FullName";
-            this.fullNameDataGridViewTextBoxColumn.Name = "fullNameDataGridViewTextBoxColumn";
-            this.fullNameDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
             // frmCoordinator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -497,9 +502,9 @@ namespace Proyecto_Final
             this.Name = "frmCoordinator";
             this.Text = "Coordinator";
             ((System.ComponentModel.ISupportInitialize)(this.grdconcentradodedatos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.coordinatorBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grddatos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctPhoto)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.coordinatorBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
