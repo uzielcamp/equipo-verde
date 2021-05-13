@@ -56,8 +56,6 @@ namespace Proyecto_Final
             this.pctphoto = new System.Windows.Forms.PictureBox();
             this.grdadviser = new MetroFramework.Controls.MetroGrid();
             this.grdConcentradodeDatos = new MetroFramework.Controls.MetroGrid();
-            this.txtemails = new MetroFramework.Controls.MetroTextBox();
-            this.coachBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.firstNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lastNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -65,6 +63,8 @@ namespace Proyecto_Final
             this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.photoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fullNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.coachBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.txtemails = new MetroFramework.Controls.MetroTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pctphoto)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grdadviser)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grdConcentradodeDatos)).BeginInit();
@@ -130,6 +130,7 @@ namespace Proyecto_Final
             this.txtemail.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtemail.CustomButton.UseSelectable = true;
             this.txtemail.CustomButton.Visible = false;
+            this.txtemail.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.coachBindingSource, "Cellphone", true));
             this.txtemail.Lines = new string[0];
             this.txtemail.Location = new System.Drawing.Point(698, 133);
             this.txtemail.MaxLength = 32767;
@@ -160,6 +161,7 @@ namespace Proyecto_Final
             this.txtCellphone.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtCellphone.CustomButton.UseSelectable = true;
             this.txtCellphone.CustomButton.Visible = false;
+            this.txtCellphone.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.coachBindingSource, "LastName", true));
             this.txtCellphone.Lines = new string[0];
             this.txtCellphone.Location = new System.Drawing.Point(698, 103);
             this.txtCellphone.MaxLength = 32767;
@@ -220,6 +222,7 @@ namespace Proyecto_Final
             this.txtFirstName.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtFirstName.CustomButton.UseSelectable = true;
             this.txtFirstName.CustomButton.Visible = false;
+            this.txtFirstName.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.coachBindingSource, "FirstName", true));
             this.txtFirstName.Lines = new string[0];
             this.txtFirstName.Location = new System.Drawing.Point(698, 74);
             this.txtFirstName.MaxLength = 32767;
@@ -250,6 +253,7 @@ namespace Proyecto_Final
             this.txtId.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtId.CustomButton.UseSelectable = true;
             this.txtId.CustomButton.Visible = false;
+            this.txtId.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.coachBindingSource, "Id", true));
             this.txtId.Lines = new string[0];
             this.txtId.Location = new System.Drawing.Point(698, 45);
             this.txtId.MaxLength = 32767;
@@ -432,40 +436,6 @@ namespace Proyecto_Final
             this.grdConcentradodeDatos.Size = new System.Drawing.Size(463, 234);
             this.grdConcentradodeDatos.TabIndex = 38;
             // 
-            // txtemails
-            // 
-            // 
-            // 
-            // 
-            this.txtemails.CustomButton.Image = null;
-            this.txtemails.CustomButton.Location = new System.Drawing.Point(200, 1);
-            this.txtemails.CustomButton.Name = "";
-            this.txtemails.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.txtemails.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.txtemails.CustomButton.TabIndex = 1;
-            this.txtemails.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.txtemails.CustomButton.UseSelectable = true;
-            this.txtemails.CustomButton.Visible = false;
-            this.txtemails.Lines = new string[0];
-            this.txtemails.Location = new System.Drawing.Point(698, 161);
-            this.txtemails.MaxLength = 32767;
-            this.txtemails.Name = "txtemails";
-            this.txtemails.PasswordChar = '\0';
-            this.txtemails.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtemails.SelectedText = "";
-            this.txtemails.SelectionLength = 0;
-            this.txtemails.SelectionStart = 0;
-            this.txtemails.ShortcutsEnabled = true;
-            this.txtemails.Size = new System.Drawing.Size(222, 23);
-            this.txtemails.TabIndex = 61;
-            this.txtemails.UseSelectable = true;
-            this.txtemails.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.txtemails.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // coachBindingSource
-            // 
-            this.coachBindingSource.DataSource = typeof(Proyecto_Final.Entidades.Coach);
-            // 
             // idDataGridViewTextBoxColumn
             // 
             this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
@@ -508,6 +478,41 @@ namespace Proyecto_Final
             this.fullNameDataGridViewTextBoxColumn.HeaderText = "FullName";
             this.fullNameDataGridViewTextBoxColumn.Name = "fullNameDataGridViewTextBoxColumn";
             this.fullNameDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // coachBindingSource
+            // 
+            this.coachBindingSource.DataSource = typeof(Proyecto_Final.Entidades.Coach);
+            // 
+            // txtemails
+            // 
+            // 
+            // 
+            // 
+            this.txtemails.CustomButton.Image = null;
+            this.txtemails.CustomButton.Location = new System.Drawing.Point(200, 1);
+            this.txtemails.CustomButton.Name = "";
+            this.txtemails.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.txtemails.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtemails.CustomButton.TabIndex = 1;
+            this.txtemails.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtemails.CustomButton.UseSelectable = true;
+            this.txtemails.CustomButton.Visible = false;
+            this.txtemails.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.coachBindingSource, "Email", true));
+            this.txtemails.Lines = new string[0];
+            this.txtemails.Location = new System.Drawing.Point(698, 161);
+            this.txtemails.MaxLength = 32767;
+            this.txtemails.Name = "txtemails";
+            this.txtemails.PasswordChar = '\0';
+            this.txtemails.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtemails.SelectedText = "";
+            this.txtemails.SelectionLength = 0;
+            this.txtemails.SelectionStart = 0;
+            this.txtemails.ShortcutsEnabled = true;
+            this.txtemails.Size = new System.Drawing.Size(222, 23);
+            this.txtemails.TabIndex = 61;
+            this.txtemails.UseSelectable = true;
+            this.txtemails.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txtemails.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
             // frmCoach
             // 
