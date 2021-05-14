@@ -39,7 +39,6 @@ namespace Proyecto_Final
             this.bttEdit = new MetroFramework.Controls.MetroButton();
             this.bttAdd = new MetroFramework.Controls.MetroButton();
             this.txtemail = new MetroFramework.Controls.MetroTextBox();
-            this.coachBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.txtCellphone = new MetroFramework.Controls.MetroTextBox();
             this.txtLastName = new MetroFramework.Controls.MetroTextBox();
             this.txtFirstName = new MetroFramework.Controls.MetroTextBox();
@@ -53,6 +52,8 @@ namespace Proyecto_Final
             this.bttSearch = new MetroFramework.Controls.MetroButton();
             this.pctphoto = new System.Windows.Forms.PictureBox();
             this.grdDatos = new MetroFramework.Controls.MetroGrid();
+            this.pnlDatos = new MetroFramework.Controls.MetroPanel();
+            this.coachBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fullNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cellphoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -60,11 +61,10 @@ namespace Proyecto_Final
             this.photoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.firstNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lastNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pnlDatos = new MetroFramework.Controls.MetroPanel();
-            ((System.ComponentModel.ISupportInitialize)(this.coachBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctphoto)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grdDatos)).BeginInit();
             this.pnlDatos.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.coachBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // bttSave
@@ -131,7 +131,7 @@ namespace Proyecto_Final
             this.txtemail.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtemail.CustomButton.UseSelectable = true;
             this.txtemail.CustomButton.Visible = false;
-            this.txtemail.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.coachBindingSource, "Cellphone", true));
+            this.txtemail.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.coachBindingSource, "Email", true));
             this.txtemail.Lines = new string[0];
             this.txtemail.Location = new System.Drawing.Point(222, 131);
             this.txtemail.MaxLength = 32767;
@@ -148,10 +148,6 @@ namespace Proyecto_Final
             this.txtemail.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txtemail.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
-            // coachBindingSource
-            // 
-            this.coachBindingSource.DataSource = typeof(Proyecto_Final.Entidades.Coach);
-            // 
             // txtCellphone
             // 
             // 
@@ -166,7 +162,7 @@ namespace Proyecto_Final
             this.txtCellphone.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtCellphone.CustomButton.UseSelectable = true;
             this.txtCellphone.CustomButton.Visible = false;
-            this.txtCellphone.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.coachBindingSource, "LastName", true));
+            this.txtCellphone.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.coachBindingSource, "Cellphone", true));
             this.txtCellphone.Lines = new string[0];
             this.txtCellphone.Location = new System.Drawing.Point(222, 99);
             this.txtCellphone.MaxLength = 32767;
@@ -197,6 +193,7 @@ namespace Proyecto_Final
             this.txtLastName.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtLastName.CustomButton.UseSelectable = true;
             this.txtLastName.CustomButton.Visible = false;
+            this.txtLastName.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.coachBindingSource, "LastName", true));
             this.txtLastName.Lines = new string[0];
             this.txtLastName.Location = new System.Drawing.Point(222, 70);
             this.txtLastName.MaxLength = 32767;
@@ -400,6 +397,35 @@ namespace Proyecto_Final
             this.grdDatos.TabIndex = 38;
             this.grdDatos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdDatos_CellContentClick);
             // 
+            // pnlDatos
+            // 
+            this.pnlDatos.Controls.Add(this.pctphoto);
+            this.pnlDatos.Controls.Add(this.bttSearch);
+            this.pnlDatos.Controls.Add(this.lblFirstName);
+            this.pnlDatos.Controls.Add(this.lblId);
+            this.pnlDatos.Controls.Add(this.txtLastName);
+            this.pnlDatos.Controls.Add(this.lblLastName);
+            this.pnlDatos.Controls.Add(this.txtemail);
+            this.pnlDatos.Controls.Add(this.lblCellphone);
+            this.pnlDatos.Controls.Add(this.txtCellphone);
+            this.pnlDatos.Controls.Add(this.lblemail);
+            this.pnlDatos.Controls.Add(this.txtId);
+            this.pnlDatos.Controls.Add(this.txtFirstName);
+            this.pnlDatos.HorizontalScrollbarBarColor = true;
+            this.pnlDatos.HorizontalScrollbarHighlightOnWheel = false;
+            this.pnlDatos.HorizontalScrollbarSize = 10;
+            this.pnlDatos.Location = new System.Drawing.Point(475, 55);
+            this.pnlDatos.Name = "pnlDatos";
+            this.pnlDatos.Size = new System.Drawing.Size(469, 176);
+            this.pnlDatos.TabIndex = 62;
+            this.pnlDatos.VerticalScrollbarBarColor = true;
+            this.pnlDatos.VerticalScrollbarHighlightOnWheel = false;
+            this.pnlDatos.VerticalScrollbarSize = 10;
+            // 
+            // coachBindingSource
+            // 
+            this.coachBindingSource.DataSource = typeof(Proyecto_Final.Entidades.Coach);
+            // 
             // idDataGridViewTextBoxColumn
             // 
             this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
@@ -445,31 +471,6 @@ namespace Proyecto_Final
             this.lastNameDataGridViewTextBoxColumn.Name = "lastNameDataGridViewTextBoxColumn";
             this.lastNameDataGridViewTextBoxColumn.Visible = false;
             // 
-            // pnlDatos
-            // 
-            this.pnlDatos.Controls.Add(this.pctphoto);
-            this.pnlDatos.Controls.Add(this.bttSearch);
-            this.pnlDatos.Controls.Add(this.lblFirstName);
-            this.pnlDatos.Controls.Add(this.lblId);
-            this.pnlDatos.Controls.Add(this.txtLastName);
-            this.pnlDatos.Controls.Add(this.lblLastName);
-            this.pnlDatos.Controls.Add(this.txtemail);
-            this.pnlDatos.Controls.Add(this.lblCellphone);
-            this.pnlDatos.Controls.Add(this.txtCellphone);
-            this.pnlDatos.Controls.Add(this.lblemail);
-            this.pnlDatos.Controls.Add(this.txtId);
-            this.pnlDatos.Controls.Add(this.txtFirstName);
-            this.pnlDatos.HorizontalScrollbarBarColor = true;
-            this.pnlDatos.HorizontalScrollbarHighlightOnWheel = false;
-            this.pnlDatos.HorizontalScrollbarSize = 10;
-            this.pnlDatos.Location = new System.Drawing.Point(475, 55);
-            this.pnlDatos.Name = "pnlDatos";
-            this.pnlDatos.Size = new System.Drawing.Size(469, 176);
-            this.pnlDatos.TabIndex = 62;
-            this.pnlDatos.VerticalScrollbarBarColor = true;
-            this.pnlDatos.VerticalScrollbarHighlightOnWheel = false;
-            this.pnlDatos.VerticalScrollbarSize = 10;
-            // 
             // frmCoach
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -486,11 +487,11 @@ namespace Proyecto_Final
             this.Name = "frmCoach";
             this.Text = "Coach";
             this.Load += new System.EventHandler(this.frmCoach_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.coachBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctphoto)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grdDatos)).EndInit();
             this.pnlDatos.ResumeLayout(false);
             this.pnlDatos.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.coachBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
