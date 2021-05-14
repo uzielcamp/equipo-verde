@@ -259,6 +259,7 @@ namespace Proyecto_Final
             this.txtId.CustomButton.UseSelectable = true;
             this.txtId.CustomButton.Visible = false;
             this.txtId.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.majorBindingSource, "Id", true));
+            this.txtId.Enabled = false;
             this.txtId.Lines = new string[0];
             this.txtId.Location = new System.Drawing.Point(228, 11);
             this.txtId.MaxLength = 32767;
