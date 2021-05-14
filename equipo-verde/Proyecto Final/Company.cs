@@ -119,7 +119,7 @@ namespace Proyecto_Final
         {
             pnlDatos.Enabled = true;
             pctphoto.Image = null;
-            companyBindingSource.Add(new Adviser());
+            companyBindingSource.Add(new Company());
             companyBindingSource.MoveLast();
             txtName.Focus();
         }
