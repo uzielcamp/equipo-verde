@@ -17,6 +17,8 @@ namespace Proyecto_Final
         public DbSet <Coordinator> Coordinators { get; set; }
         public DbSet<Major> Majors { get; set; }
         public DbSet <Student> Students { get; set; }
+        public object Companies { get; internal set; }
+
         public DataContext() : base("name=miConexion")
         {
 
